@@ -1,0 +1,23 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%; 
+}
+
+h1, h2, h3, h4, p {
+  text-align: center; 
+}
+
+.callendar__element-header:hover + .callendar_element-body {
+  display: none; 
+}
