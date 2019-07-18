@@ -6,6 +6,10 @@ body, html {
 	align-items: center;
 }
 
+.callendar__header h1::before, .callendar__header h1::after {
+	content: "::"
+}
+
 .main {
 	display: flex;
 	justify-content: center;
@@ -18,6 +22,36 @@ h1, h2, h3, h4, p {
 	text-align: center;
 }
 
-.callendar__element-header:hover + .callendar_element-body{
-	display: block;
+
+
+.date__class{
+	height: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.selectors__class__3 {
+	width: 30%;
+	height: 100%;
+	border-radius: 0;
+}
+
+.selectors__class__2 {
+	width: 50%;
+	height: 100%;
+	border-radius: 0;
+}
+
+.callendar_element-body{
+	display: none;
+}
+
+.callendar__elem{
+	&:hover {
+		> .callendar_element-body{
+			display: block;
+		}
+
+	}
 }
